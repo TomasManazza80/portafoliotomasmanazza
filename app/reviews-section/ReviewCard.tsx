@@ -4,7 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
-import profile from "../../public/samuel.avif";
+
 import slash from "../../public/review-slash.svg";
 import { motion } from "framer-motion";
 
