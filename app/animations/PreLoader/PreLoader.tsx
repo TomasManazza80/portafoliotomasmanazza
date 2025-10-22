@@ -26,13 +26,13 @@ const PreLoader = () => {
         </div>
         <div className="preloader-ceo-line flex items-center gap-2">
           <span className="preloader-subtext inline-block text-xs sm:text-sm md:text-base lg:text-lg font-bold text-[#9ca3af] opacity-0 translate-y-full">
-            CEO
+            PROGRAMADOR
           </span>
           <span className="preloader-subtext inline-block text-xs sm:text-sm md:text-base lg:text-lg font-bold text-[#9ca3af] opacity-0 translate-y-full">
-            of
+            FULL
           </span>
           <span className="preloader-subtext inline-block text-xs sm:text-sm md:text-base lg:text-lg font-bold text-[#9ca3af] opacity-0 translate-y-full">
-            EMPTY
+            STACK
           </span>
         </div>
       </div>

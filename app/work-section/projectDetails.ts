@@ -10,28 +10,28 @@ export type ProjectProps = {
 };
 
 export const devProjects = [
-   {
-    id: 0,
-    name: "Sistema de gestion Inmobiliario",
-    description:
-      "This is a website for a Fintech Startup to showcase their innovative solutions tailored to meet the evolving needs of their clients.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/TomasManazza80",
-    demo: "https://alquileresoc.netlify.app/",
-    image: require(".//../../public/projects/PROYECTOS/octa.png"),
-    available: true,
-  },
-  {
-    id: 1,
-    name: "Ecommerce LifeStyle Decoration",
-    description:
-      "Portfolio website for Michael Odunsi, an experienced UI/UX designer crafting unique, user-friendly products and web experiences for Web3 founders and projects.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/TomasManazza80",
-    demo: "https://creative-fox-b4db69.netlify.app/",
-    image: require(".//../../public/projects/PROYECTOS/ecommerce.png"),
-    available: true,
-  },
+{
+  id: 0,
+  name: "Vinoteca Baco",
+  description:
+    "Este es un e-commerce de vinos con un Dashboard de Administración completo para la gestión interna. Permite el control del balance financiero, el stock de productos y el cierre de caja diario. Además, cuenta con la integración de Mercado Pago para procesar pagos de manera eficiente y un sistema de notificaciones integrado para mantener a los administradores y usuarios al tanto de las novedades.",
+  technologies: ["React", "Tailwind CSS", "Framer Motion"],
+  github: "https://github.com/TomasManazza80",
+  demo: "https://vineriabaco.com/",
+  image: require(".//../../public/projects/PROYECTOS/baco.png"),
+  available: true,
+},
+{
+  id: 1,
+  name: "LifeStyle Decoration",
+  description:
+    "Este es un e-commerce para una tienda de velas y accesorios para el hogar. Incluye un completo Dashboard de Administración que permite gestionar el balance financiero, el stock de productos y el cierre de caja diario. Está integrado con Mercado Pago para facilitar las transacciones y cuenta con un sistema de notificaciones para mantener la gestión informada en tiempo real.",
+  technologies: ["React", "Tailwind CSS", "Framer Motion"],
+  github: "https://github.com/TomasManazza80",
+  demo: "https://lupetruccelli.com/",
+  image: require(".//../../public/projects/PROYECTOS/ecommerce.png"),
+  available: true,
+},
  
   {
     id: 2,
@@ -44,17 +44,17 @@ export const devProjects = [
     image: require(".//../../public/projects/PROYECTOS/Exodium.png"),
     available: true,
   },
-  {
-    id: 3,
-    name: "NEW STYLE GYM",
-    description:
-      "A website built for a software startup and small business, to showcase their services and mark their online presence.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/TomasManazza80",
-    demo: "https://newstylegym.life/",
-    image: require(".//../../public/projects/PROYECTOS/newStyle.png"),
-    available: true,
-  },
+ {
+  id: 1,
+  name: "NEW STYLE",
+  description:
+    "Este es un sistema de gestión integral diseñado para un gimnasio. Su característica principal es el módulo de control de pagos de usuarios. Incluye un Dashboard de Administración para monitorear el estado de las membresías, permitiendo identificar de forma clara y rápida qué usuarios han pagado y cuáles no. Posee integración con Mercado Pago para procesar las cuotas y un sistema de notificaciones para la administración.",
+  technologies: ["React", "Tailwind CSS", "Framer Motion"],
+  github: "https://github.com/TomasManazza80",
+  demo: "https://newstylegym.life/",
+  image: require(".//../../public/projects/PROYECTOS/newStyle.png"),
+  available: true,
+},
   // {
   //   id: 4,
   //   name: "Flixify",

@@ -62,7 +62,7 @@ const Contact = () => {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/victor-williams-chukwudi/"
+              href="https://www.linkedin.com/in/tomasmanazza/?locale=es_ES"
               target="_blank"
               aria-label="View LinkedIn Profile"
               className="hover:opacity-80 transition-opacity"

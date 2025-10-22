@@ -1,68 +1,50 @@
 import { StaticImageData } from "next/image";
-import alex from "../../public/samuel.avif";
-import jerry from "../../public/jerry.avif";
-import mauro from "../../public/mauro.jpeg";
-import alan from "../../public/alan.jpeg";
-import olamide from "../../public/olamide.jpeg";
-import umar from "../../public/umar.jpeg";
+// ⚠️ NOTA IMPORTANTE:
+// DEBES colocar las imágenes reales de cada desarrollador 
+// en la carpeta '../../public/' y renombrar los archivos si es necesario.
+// Las rutas aquí son placeholders.
+import joaquinImg from "../../public/persons/joa.png"; // Asume que existe una imagen para Joaquin
+import matiasImg from "../../public/persons/mati.png";   // Asume que existe una imagen para Matias
+import jeffersonImg from "../../public/persons/jeff.png"; // Asume que existe una imagen para Jefferson
 
 export type reviewProps = {
-  name: string;
-  role: string;
-  company: string;
-  profileImg: StaticImageData;
-  testimonial: string;
-  index: number;
+  name: string;
+  role: string;
+  company: string;
+  profileImg: StaticImageData;
+  testimonial: string;
+  index: number;
 };
 
+/**
+ * Detalles de los testimonios de colaboración.
+ * Estos testimonios resaltan el trabajo de Tomas Manazza (el propietario del portafolio)
+ * en la integración de pasarelas de pago y el desarrollo de la API de seguimiento de pagos,
+ * según lo atestiguan sus colaboradores.
+ */
 export const reviewDetails = [
-  {
-    name: "Samuel Alex",
-    role: "Product Designer",
-    company: "Umoja Linn",
-    profileImg: alex,
-    testimonial:
-      "Victor is seriously one of the best frontend developers I've ever worked with. He's incredibly talented, super easy to work with, and always goes above and beyond.",
-  },
-  {
-    name: "Jeremiah Oloyede",
-    role: "Founder",
-    company: "Crown Branding Agency",
-    profileImg: jerry,
-    testimonial:
-      "Victor's work is truly outstanding, and I can't recommend him enough! He completely transformed our branding agency's website. Since launch, we've seen a significant jump in website traffic and, crucially, conversions.",
-  },
-  {
-    name: "Mauro Reis",
-    role: "CEO",
-    company: "Meuclone Digital",
-    profileImg: mauro,
-    testimonial:
-      "Outstanding professional, developed our startup's website and delivered it in a very short time and with high quality.",
-  },
-  {
-    name: "Umar Abdullahi",
-    role: "Head of Engineering",
-    company: "Mono",
-    profileImg: umar,
-    testimonial:
-      "Victor is hardworking and has great sense of ownership. He was able to contribute in engineering excellent user interfaces and user experiences at Mono. I’m confident he will be a great asset to any engineering team.",
-  },
-  {
-    name: "Olamide Sholanke",
-    role: "Senior Frontend Engineer",
-    company: "Mono",
-    profileImg: olamide,
-    testimonial:
-      "I had the pleasure of working with Victor on a frontend development project at Mono, and I highly recommend him. He consistently delivered high-quality code, and brought a proactive and creative approach to problem-solving.",
-  },
-  {
-    name: "Alan Franciskovic",
-    role: "Sales Specialist",
-    company: "Croatia Osiguranje d.d",
-    profileImg: alan,
-    testimonial:
-      "Very talented and amazing freelancer. Very easy to communicate with, pleasure to work with. Outstanding attention to detail, and works as fast as possible while also delivering amazing work.",
-  },
-  
+  {
+    name: "Joaquin Ibañez",
+    role: "Programador Front End | Colaborador de Equipo",
+    company: "Proyecto API de Pagos", // Cambia esto al nombre de tu proyecto/empresa
+    profileImg: joaquinImg,
+    testimonial:
+      "La contribución de Tomas fue fundamental para la integración fluida de las pasarelas de pago. Su trabajo en la API nos permitió conectar el Front End con el sistema de seguimiento de manera impecable y segura, mejorando la experiencia del usuario.",
+  },
+  {
+    name: "Matias Ahumada",
+    role: "Full Stack Developer | Líder de Back-end",
+    company: "Proyecto API de Pagos", // Cambia esto al nombre de tu proyecto/empresa
+    profileImg: matiasImg,
+    testimonial:
+      "Trabajar con Tomas en el desarrollo de la API para el sistema de seguimiento de pagos fue muy eficiente. Su enfoque en la estabilidad y la lógica de negocio aseguró que el servicio fuera robusto, escalable y cumpliera con todos los requisitos funcionales.",
+  },
+  {
+    name: "Jefferson Camacho",
+    role: "Full Stack Developer | Especialista en Transacciones",
+    company: "Proyecto API de Pagos", // Cambia esto al nombre de tu proyecto/empresa
+    profileImg: jeffersonImg,
+    testimonial:
+      "Tomas se encargó de la parte más crítica: la integración de pasarelas de pago. Su dedicación a los detalles y a la seguridad en el manejo de datos es de un nivel superior. Gracias a su colaboración, la API maneja las transacciones sin problemas.",
+  },
 ];

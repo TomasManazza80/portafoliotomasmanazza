@@ -12,26 +12,26 @@ const syne = Syne({
 
 // 1. MEJORA ESTRATÉGICA: Más palabras clave locales y de tecnología al inicio
 export const metadata: Metadata = {
-  // 🎯 TÍTULO OPTIMIZADO: Palabras clave fuertes al inicio (SEO Local y Tecnología)
-  title: "Tomas Manazza | Programador Full Stack en Santa Fe | Next.js & React Expert",
+  // 🎯 TÍTULO OPTIMIZADO: Enfocado directamente en "Tomas Manazza - Full Stack Developer"
+  title: "Tomas Manazza - Full Stack Developer | Next.js & React Expert en Santa Fe",
   // 📝 DESCRIPCIÓN OPTIMIZADA: Concisa, con repetición de palabras clave
   description:
-    "Tomas Manazza: Programador Full Stack y CEO de Empty_Development. Ofrezco desarrollo web de alto rendimiento (Next.js, React) y soluciones Back-end. Tu experto local en Santa Fe, Argentina.",
+    "Tomas Manazza: **Full Stack Developer** y CEO de Empty_Development. Ofrezco desarrollo web de alto rendimiento (Next.js, React) y soluciones Back-end escalables. Tu experto local en Santa Fe, Argentina.",
   generator: "Next.js",
-  applicationName: "Tomas Manazza - Portafolio Profesional",
-  
-  // 🔑 KEYWORDS OPTIMIZADAS: Prioridad local y de intención comercial
+  applicationName: "Tomas Manazza - Portafolio Profesional de Full Stack Developer",
+
+  // 🔑 KEYWORDS OPTIMIZADAS: Prioridad al rol específico
   keywords: [
-    "programador full stack santa fe",
+    "tomas manazza full stack developer", // CLAVE: Rol específico en primer lugar
     "full stack developer santa fe",
-    "developer santa fe",
+    "programador full stack santa fe",
     "Next.js developer santa fe",
     "React developer santa fe",
     "tomas manazza",
     "Empty_Development",
     "programador argentina",
-    "desarrollo web santa fe", 
-    "contratar full stack developer", 
+    "desarrollo web santa fe",
+    "contratar full stack developer",
   ],
   metadataBase: new URL("https://www.tomasmanazza.com"),
   alternates: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
   // 🔗 OPEN GRAPH (Compartir en Redes) - Título coherente
   openGraph: {
-    title: "Tomas Manazza | Full Stack Developer | Santa Fe, Argentina",
+    title: "Tomas Manazza | Full Stack Developer | Santa Fe, Argentina", // ¡CONFIRMADO!
     description:
       "Desarrollador Full Stack experto en crear aplicaciones web de alto impacto con Next.js y React. ¡Contáctame para tu proyecto en Santa Fe!",
     url: "https://www.tomasmanazza.com",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: "https://i.postimg.cc/SKD5TpwV/Whats-App-Image-2025-09-24-at-7-54-20-PM.jpg",
         width: 1200,
         height: 630,
-        alt: "Tomas Manazza - Programador Full Stack en Santa Fe",
+        alt: "Tomas Manazza - Full Stack Developer en Santa Fe", // ¡AJUSTADO!
       },
     ],
     locale: "es_AR",
@@ -67,15 +67,15 @@ export const metadata: Metadata = {
   // 🐦 TWITTER CARDS - Título optimizado
   twitter: {
     card: "summary_large_image",
-    title: "Programador Full Stack Next.js | Tomas Manazza | Santa Fe 🇦🇷",
+    title: "Tomas Manazza - Full Stack Developer Next.js | Santa Fe 🇦🇷", // ¡AJUSTADO!
     description:
-      "Tomas Manazza, Programador Full Stack y CEO de Empty_Development. Soluciones web rápidas, escalables y orientadas a resultados. Next.js & React.",
+      "Tomas Manazza, Full Stack Developer y CEO de Empty_Development. Soluciones web rápidas, escalables y orientadas a resultados. Next.js & React.",
     creator: "@[TuUsuarioTwitter]", // ¡IMPORTANTE: Reemplazar con tu handle real!
     images: [
       "https://i.postimg.cc/SKD5TpwV/Whats-App-Image-2025-09-24-at-7-54-20-PM.jpg",
     ],
   },
-  
+
   // ✅ ROBOTS: Mantenido, configuración correcta para indexación.
   robots: {
     index: true,
@@ -102,8 +102,8 @@ type RootLayoutProps = {
 const schemaMarkup = {
   "@context": "http://schema.org",
   "@type": "Person", // Tipo 'Person' para un portafolio individual
-  "name": "Tomas Manazza",
-  "jobTitle": "Programador Full Stack (Next.js & React Developer)",
+  "name": "Tomas Manazza", // ¡CONFIRMADO!
+  "jobTitle": "Full Stack Developer (Next.js & React Expert)", // ¡AJUSTADO al rol exacto!
   "url": "https://www.tomasmanazza.com",
   "sameAs": [
     "https://www.linkedin.com/in/tomasmanazza/", // Rellena con tu LinkedIn
