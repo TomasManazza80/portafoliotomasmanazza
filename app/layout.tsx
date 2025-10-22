@@ -131,7 +131,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
-        <meta name="google-site-verification" content="Tviee0mVRz9tlPLOv5_waP-rNS3m0y4K2mbqDHSqPJE" />
+       
       </head>
       <body
         className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
