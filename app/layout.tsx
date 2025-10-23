@@ -2,7 +2,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+// IMPORTACIÓN DE ANALYTICS ELIMINADA: import { Analytics } from "@vercel/analytics/react";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -81,6 +81,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
     nocache: false,
+    // GoogleBot sigue siendo importante para indexación, no lo elimino a menos que lo pidas específicamente.
     googleBot: {
       index: true,
       follow: true,
@@ -98,18 +99,17 @@ type RootLayoutProps = {
 };
 
 // 2. MEJORA ESTRATÉGICA: JSON-LD (Schema Markup)
-// Esto es crucial para decirle a Google quién eres y dónde estás, mejorando el SEO Local.
 const schemaMarkup = {
   "@context": "http://schema.org",
-  "@type": "Person", // Tipo 'Person' para un portafolio individual
-  "name": "Tomas Manazza", // ¡CONFIRMADO!
-  "jobTitle": "Full Stack Developer (Next.js & React Expert)", // ¡AJUSTADO al rol exacto!
+  "@type": "Person",
+  "name": "Tomas Manazza",
+  "jobTitle": "Full Stack Developer (Next.js & React Expert)",
   "url": "https://www.tomasmanazza.com",
   "sameAs": [
-    "https://www.linkedin.com/in/tomasmanazza/", // Rellena con tu LinkedIn
-    "https://github.com/tomasmanazza", // Rellena con tu GitHub
-    "https://www.emptydevelopment.com/", // Rellena con tu sitio de Empty_Development
-    "URL a tu Perfil de Twitter/X" // Rellena con tu Twitter
+    "https://www.linkedin.com/in/tomasmanazza/",
+    "https://github.com/tomasmanazza",
+    "https://www.emptydevelopment.com/",
+    "URL a tu Perfil de Twitter/X"
   ],
   "address": {
     "@type": "PostalAddress",
@@ -117,7 +117,7 @@ const schemaMarkup = {
     "addressRegion": "Santa Fe",
     "addressCountry": "AR"
   },
-  "alumniOf": "Universidad o Bootcamp donde estudiaste", // Opcional: Aumenta credibilidad
+  "alumniOf": "Universidad o Bootcamp donde estudiaste",
   "image": "https://i.postimg.cc/SKD5TpwV/Whats-App-Image-2025-09-24-at-7-54-20-PM.jpg",
 };
 
@@ -126,18 +126,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="es">
       <head>
-        {/* ✨ JSON-LD (Schema Markup) - ¡La joya de la corona del SEO! */}
+        {/* JSON-LD (Schema Markup) - Crucial para SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
-       
+        
       </head>
       <body
         className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
       >
         {children}
-        <Analytics />
+        {/* ANALYTICS ELIMINADO: <Analytics /> */}
       </body>
     </html>
   );
